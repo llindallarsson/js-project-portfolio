@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const Link = styled.a`
-  font-family: Hind;
-  color: black;
   text-decoration: underline;
   text-decoration-color: #bc4749;
   text-decoration-thickness: 2px;
