@@ -1,8 +1,15 @@
+import HeroSectionMain from "./sections/HeroSectionMain";
+import AboutSection from "./sections/AboutSection";
+import SkillsSection from "./sections/SkillsSection";
+import ProjectsSection from "./sections/ProjectsSection";
+import FooterSection from "./sections/FooterSection";
+
 export const App = () => {
   return (
     <>
-      <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum! Maxime animi nostrum facilis distinctio neque labore consectetur beatae eum ipsum excepturi voluptatum, dicta repellendus incidunt fugiat, consequatur rem aperiam.</p>
+      <HeroSectionMain></HeroSectionMain>
+      <AboutSection></AboutSection>
+      <SkillsSection></SkillsSection>
     </>
-  )
-}
+  );
+};
