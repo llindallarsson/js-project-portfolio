@@ -1,17 +1,21 @@
 import ProgressBar from "../components/ProgressBar";
+import Title from "../components/Title";
+import Link from "../components/Links";
 
 const HeroSectionMain = () => {
   return (
     <main>
       <ProgressBar />
       <p> {"<"} Hello, my name is</p>
-      <h1>
-        Linda Larsson. <br />
-        <br />I build nice things.
-      </h1>
+      <Title>
+        Linda Larsson.
+        <br />
+        <div>I build nice things.</div>
+      </Title>
+
       <p>
-        Get in touch 👉{" "}
-        <a href="larsson.ll@hotmail.com">larsson.ll@hotmail.com</a> {"/>"}
+        Get in touch 👉 <Link>larsson.ll@hotmail.com</Link>
+        {" />"}
       </p>
     </main>
   );

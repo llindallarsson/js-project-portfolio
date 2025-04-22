@@ -1,5 +1,5 @@
 const TechTag = () => {
-  return <p>{props.techTag}</p>;
+  return <p></p>;
 };
 
 export default TechTag;

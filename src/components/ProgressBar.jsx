@@ -1,7 +1,7 @@
 const ProgressBar = () => {
   return (
-    <div id="progress-container">
-      <div class="progress-fill"></div>
+    <div>
+      <div></div>
       <p>en progressbar ska ligga här</p>
     </div>
   );

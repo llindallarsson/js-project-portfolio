@@ -10,6 +10,8 @@ export const App = () => {
       <HeroSectionMain></HeroSectionMain>
       <AboutSection></AboutSection>
       <SkillsSection></SkillsSection>
+      <ProjectsSection></ProjectsSection>
+      <FooterSection></FooterSection>
     </>
   );
 };

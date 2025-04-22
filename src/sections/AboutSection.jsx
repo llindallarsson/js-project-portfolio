@@ -1,3 +1,5 @@
+import Link from "../components/Links";
+
 const AboutSection = () => {
   return (
     <>
@@ -20,8 +22,7 @@ const AboutSection = () => {
         Looking for someone who can code with precision, think like a designer,
         and speak both Figma and JavaScript? Let’s connect!
       </p>
-
-      <a href="">Get to know me more ➡️</a>
+      <Link>Get to know me more → </Link>
     </>
   );
 };
