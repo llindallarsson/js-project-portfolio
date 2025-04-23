@@ -8,14 +8,11 @@ const LinkButtonWrapper = styled.div`
   gap: 12px;
 `;
 
-const ProjectImage = styled.div`
-  background-image: url(${(props) => props.$src});
-  background-size: cover;
-  background-position: center;
+const ProjectImage = styled.img`
   width: 100%;
   height: 223px;
+  object-fit: cover;
   border-radius: 12px;
-  overflow: hidden;
 `;
 
 const ProjectCardWrapper = styled.article`
@@ -26,14 +23,15 @@ const ProjectCard = ({
   title,
   description,
   imageSrc,
+  imageAlt,
   tech,
   liveLink,
   codeLink,
 }) => {
   return (
     <ProjectCardWrapper>
-      <ProjectImage $src={imageSrc} />
-      <h3> {title}</h3>
+      <ProjectImage src={imageSrc} alt={imageAlt || title} />
+      <h3>{title}</h3>
       <p>{description}</p>
       <TechTag tech={tech} />
       <LinkButtonWrapper>
