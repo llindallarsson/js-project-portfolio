@@ -1,9 +1,10 @@
 import { Link } from "../components/Links";
+import { SectionHeader } from "../components/Typography";
 
 const AboutSection = () => {
   return (
     <>
-      <h2>About</h2>
+      <SectionHeader>About</SectionHeader>
       <p>
         I’m a frontend developer with a strong technical foundation in{" "}
         <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript (ES6)</b>, <b>TypeScript</b>,

@@ -1,9 +1,10 @@
 import ProjectCard from "../components/ProjectCard";
+import { SectionHeader } from "../components/Typography";
 
 const ProjectsSection = () => {
   return (
     <>
-      <h2>Featured projects</h2>
+      <SectionHeader>Featured projects</SectionHeader>
       <ProjectCard></ProjectCard>
       <ProjectCard></ProjectCard>
     </>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ProgressBar from "../components/ProgressBar";
-import { Title, StyledP } from "../components/Typography";
+import { Title, TitelStyled, StyledP } from "../components/Typography";
 import { Link } from "../components/Links";
 import ArrowHero from "../components/ArrowHero";
 
@@ -17,11 +17,9 @@ const HeroSectionMain = () => {
     <HeroWrapper>
       <ProgressBar />
       <StyledP> {"<"} Hello, my name is</StyledP>
-      <Title>
-        Linda Larsson.
-        <br />
-        <div>I build nice things.</div>
-      </Title>
+      <Title>Linda Larsson.</Title>
+      <TitelStyled>I build nice things.</TitelStyled>
+
       <StyledP>
         Get in touch 👉 <Link>larsson.ll@hotmail.com</Link>
         {" />"}

@@ -1,7 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background: #fbf7ef;
   color: black;
-  padding: 8px;
+  padding: 16px;
+  margin: 0;
 }
 
 h1,
