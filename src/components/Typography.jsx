@@ -19,6 +19,11 @@ export const StyledP = styled.p`
   margin: 16px 0;
 `;
 
+export const StyledPFooter = styled(StyledP)`
+  text-align: center;
+  font-weight: 700;
+`;
+
 export const SectionHeader = styled.h2`
   color: #bc4749;
   font-family: "Montserrat", sans-serif;
