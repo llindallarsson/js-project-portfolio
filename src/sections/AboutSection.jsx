@@ -21,8 +21,10 @@ const AboutSection = () => {
         user-centered and visually refined. <br /> <br />
         Looking for someone who can code with precision, think like a designer,
         and speak both Figma and JavaScript? Let’s connect!
+        <br />
+        <br />
+        <Link>Get to know me more → </Link>
       </p>
-      <Link>Get to know me more → </Link>
     </>
   );
 };
