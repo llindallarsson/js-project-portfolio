@@ -1,9 +1,13 @@
+import styled from "styled-components";
 import { Link } from "../components/Links";
 import { SectionHeader } from "../components/Typography";
 
+const AboutSectionWrapper = styled.section`
+  margin: 0 0 120px 0;
+`;
 const AboutSection = () => {
   return (
-    <>
+    <AboutSectionWrapper>
       <SectionHeader>About</SectionHeader>
       <p>
         I’m a frontend developer with a strong technical foundation in{" "}
@@ -26,7 +30,7 @@ const AboutSection = () => {
         <br />
         <Link>Get to know me more → </Link>
       </p>
-    </>
+    </AboutSectionWrapper>
   );
 };
 

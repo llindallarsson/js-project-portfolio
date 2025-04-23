@@ -2,8 +2,13 @@ import { useEffect, useState } from "react";
 
 const ProgressBar = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [barHeight, setBarHeight] = useState("4px");
 
   useEffect(() => {
+    const handleResize = () => {
+      setBarHeight(window.innerWidth >= 667 ? "8px" : "4px");
+    };
+
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
@@ -14,18 +19,20 @@ const ProgressBar = () => {
       setScrollPercentage(percentage);
     };
 
+    handleResize(); // set initial height
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <div
-      id="progress-container"
       style={{
-        height: "4px",
+        height: barHeight,
         width: "100%",
         backgroundColor: "#f0c7c8",
         position: "fixed",
@@ -36,7 +43,6 @@ const ProgressBar = () => {
       }}
     >
       <div
-        className="progress-fill"
         style={{
           height: "100%",
           backgroundColor: "#BC4749",

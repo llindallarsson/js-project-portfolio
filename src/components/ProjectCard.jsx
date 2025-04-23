@@ -16,7 +16,7 @@ const ProjectImage = styled.img`
 `;
 
 const ProjectCardWrapper = styled.article`
-  margin: 64px 0;
+  margin-bottom: 64px;
 `;
 
 const ProjectCard = ({

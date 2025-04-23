@@ -10,6 +10,7 @@ const HeroWrapper = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
 `;
 
 const HeroSectionMain = () => {
