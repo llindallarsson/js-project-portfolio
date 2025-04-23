@@ -13,6 +13,14 @@ const CenteredWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 100px;
+
+  @media (min-width: 667px) {
+    margin-top: 120px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 180px;
+  }
 `;
 
 const BounceArrow = styled.div`

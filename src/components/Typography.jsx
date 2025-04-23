@@ -48,5 +48,12 @@ export const SectionHeader = styled.h2`
   color: #bc4749;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin-bottom: 40px;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
