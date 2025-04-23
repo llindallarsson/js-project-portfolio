@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Link = styled.a`
+export const Link = styled.a`
   text-decoration: underline;
   text-decoration-color: #bc4749;
   text-decoration-thickness: 2px;
@@ -8,8 +8,16 @@ const Link = styled.a`
   cursor: pointer;
 `;
 
-const LinkButton = () => {
-  return <a href="#">Hej</a>;
-};
+export const LinkButton = styled(Link)`
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  background-color: #bc4749;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 40px;
 
-export default Link;
+  &:hover {
+    background-color: #f5f5f5;
+    color: #bc4749;
+  }
+`;

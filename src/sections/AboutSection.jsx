@@ -1,4 +1,4 @@
-import Link from "../components/Links";
+import { Link } from "../components/Links";
 
 const AboutSection = () => {
   return (

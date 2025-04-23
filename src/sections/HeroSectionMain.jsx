@@ -1,12 +1,12 @@
 import ProgressBar from "../components/ProgressBar";
 import Title from "../components/Typography";
-import Link from "../components/Links";
+import { Link } from "../components/Links";
 
 const HeroSectionMain = () => {
   return (
     <main>
       <ProgressBar />
-      <p header> {"<"} Hello, my name is</p>
+      <p> {"<"} Hello, my name is</p>
       <Title>
         Linda Larsson.
         <br />

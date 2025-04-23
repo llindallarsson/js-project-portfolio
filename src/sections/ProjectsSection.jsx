@@ -5,6 +5,7 @@ const ProjectsSection = () => {
     <>
       <h2>Featured projects</h2>
       <ProjectCard></ProjectCard>
+      <ProjectCard></ProjectCard>
     </>
   );
 };
