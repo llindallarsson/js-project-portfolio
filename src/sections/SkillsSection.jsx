@@ -1,10 +1,23 @@
-import SkillComponent from "../components/SkillComponent";
+import { SkillSeparater, SkillComponent } from "../components/SkillComponent";
 
 const SkillsSection = () => {
   return (
     <>
       <h2>Skills</h2>
-      <SkillComponent></SkillComponent>
+      <SkillComponent
+        titel="Tjoo"
+        skill={["hej", "då", "kul ju"]}
+      ></SkillComponent>
+      <SkillSeparater />
+      <SkillComponent
+        titel="Tjoo"
+        skill={["hej", "då", "kul ju"]}
+      ></SkillComponent>
+      <SkillSeparater />
+      <SkillComponent
+        titel="Tjoo"
+        skill={["hej", "då", "kul ju"]}
+      ></SkillComponent>
     </>
   );
 };

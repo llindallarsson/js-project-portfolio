@@ -1,14 +1,18 @@
 body {
   background: #fbf7ef;
   color: black;
+  padding: 8px;
 }
 
 h1,
 h2 {
   color: #bc4749;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3,
-p {
+p,
+li,
+a {
   font-family: Hind;
 }
