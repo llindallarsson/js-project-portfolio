@@ -41,7 +41,7 @@ const MediaLinksWrapper = styled.div`
   gap: 24px;
 `;
 
-const MediaLinks = () => {
+export const MediaLinks = () => {
   return (
     <MediaLinksWrapper>
       <a href="https://github.com/llindallarsson">{<IconGitHub />}</a>
@@ -51,5 +51,3 @@ const MediaLinks = () => {
     </MediaLinksWrapper>
   );
 };
-
-export default MediaLinks;

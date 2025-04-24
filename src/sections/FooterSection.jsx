@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { StyledPFooter } from "../components/Typography";
-import MediaLinks from "../components/MediaLinks";
+import { MediaLinks } from "../components/MediaLinks";
 
 const FooterWrapper = styled.section`
   margin: 60px 0;
