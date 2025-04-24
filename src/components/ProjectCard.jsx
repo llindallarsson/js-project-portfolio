@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import TechTag from "../components/TechTag";
-import { LinkButton } from "./Links";
+import TechTag from "./TechTag";
+import { LinkButton, LinkButtonWithIcon } from "./Links";
+import { LiveIcon, GitHubIcon } from "./Icons";
 
 const LinkButtonWrapper = styled.div`
   display: inline-flex;
@@ -50,8 +51,16 @@ const ProjectCard = ({
         <p>{description}</p>
         <TechTag tech={tech} />
         <LinkButtonWrapper>
-          <LinkButton href={liveLink}>Live demo</LinkButton>
-          <LinkButton href={codeLink}>View the code</LinkButton>
+          <LinkButtonWithIcon
+            href={liveLink}
+            icon={<LiveIcon />}
+            title="Live Demo"
+          />
+          <LinkButtonWithIcon
+            href={codeLink}
+            icon={<GitHubIcon />}
+            title="View the code"
+          />
         </LinkButtonWrapper>
       </div>
     </ProjectCardWrapper>
