@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "../components/Links";
+import { Link } from "react-router-dom";
 import { SectionHeader } from "../components/Typography";
 import { Sidebar } from "../components/Sidebar";
 
@@ -51,7 +51,7 @@ const AboutSection = () => {
           designer, and speak both Figma and JavaScript? Let’s connect!
           <br />
           <br />
-          <Link>Get to know me more → </Link>
+          <Link to="/about">Get to know me more → </Link>
         </p>
       </TextWrapper>
     </AboutSectionWrapper>

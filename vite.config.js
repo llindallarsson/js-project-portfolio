@@ -10,4 +10,7 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    historyApiFallback: true, // Lägg till denna rad!
+  },
 });
