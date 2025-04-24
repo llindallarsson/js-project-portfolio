@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import TechTag from "./TechTag";
-import { LinkButton, LinkButtonWithIcon } from "./Links";
+import { TechTag } from "./TechTag";
+import { LinkButtonWithIcon } from "./Links";
 import { LiveIcon, GitHubIcon } from "./Icons";
 
 const LinkButtonWrapper = styled.div`
@@ -30,11 +30,11 @@ const ProjectCardWrapper = styled.article`
   @media (min-width: 1224px) {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 18px;
   }
 `;
 
-const ProjectCard = ({
+export const ProjectCard = ({
   title,
   description,
   imageSrc,
@@ -66,5 +66,3 @@ const ProjectCard = ({
     </ProjectCardWrapper>
   );
 };
-
-export default ProjectCard;

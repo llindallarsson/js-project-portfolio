@@ -21,7 +21,7 @@ const TechTagWrapper = styled.div`
   margin: 16px 0;
 `;
 
-const TechTag = ({ tech = [] }) => {
+export const TechTag = ({ tech = [] }) => {
   return (
     <TechTagWrapper>
       {tech.map((item, index) => (
@@ -30,5 +30,3 @@ const TechTag = ({ tech = [] }) => {
     </TechTagWrapper>
   );
 };
-
-export default TechTag;

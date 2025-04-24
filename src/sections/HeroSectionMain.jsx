@@ -30,7 +30,8 @@ const HeroSectionMain = () => {
       <TitelStyled>I build nice things.</TitelStyled>
 
       <StyledP>
-        Get in touch 👉 <Link>larsson.ll@hotmail.com</Link>
+        Get in touch 👉{" "}
+        <Link href="mailto:larsson.ll@hotmail.com">larsson.ll@hotmail.com</Link>
         {" />"}
       </StyledP>
       <ArrowHero />

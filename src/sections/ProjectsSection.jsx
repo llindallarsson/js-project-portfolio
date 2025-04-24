@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SectionHeader } from "../components/Typography";
-import ProjectCard from "../components/ProjectCard";
+import { ProjectCard } from "../components/ProjectCard";
 import { Sidebar } from "../components/Sidebar";
 
 const ProjectSectionWrapper = styled.section`
@@ -31,27 +31,27 @@ const ProjectsSection = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
           imageSrc="/images/business_project.png"
           imageAlt="Business project"
-          tech={["Hej", "Ja"]}
-          liveLink="https://github.com/llindallarsson"
-          codeLink="https://github.com/llindallarsson"
+          tech={["HTML", "CSS"]}
+          liveLink="https://earthenexpressions.netlify.app/"
+          codeLink="https://github.com/llindallarsson/js-project-business-site"
         ></ProjectCard>
         <ProjectCard
           title="Recipe project"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
           imageSrc="/images/recipe_project.png"
           imageAlt="Recipe project"
-          tech={["Hej", "Ja"]}
-          liveLink="https://github.com/llindallarsson"
-          codeLink="https://github.com/llindallarsson"
+          tech={["JavaScript", "HTML", "CSS"]}
+          liveLink="https://recipelibrary-lindal.netlify.app/"
+          codeLink="https://github.com/llindallarsson/js-project-recipe-library"
         ></ProjectCard>
         <ProjectCard
           title="Accessibility project"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
           imageSrc="/images/accessibility_project.png"
           imageAlt="Accessibility project"
-          tech={["Hej", "Ja"]}
-          liveLink="https://github.com/llindallarsson"
-          codeLink="https://github.com/llindallarsson"
+          tech={["JavaScript", "HTML", "CSS"]}
+          liveLink="https://accessibility-project-lindal.netlify.app/"
+          codeLink="https://github.com/llindallarsson/js-project-accessibility"
         ></ProjectCard>
       </div>
     </ProjectSectionWrapper>

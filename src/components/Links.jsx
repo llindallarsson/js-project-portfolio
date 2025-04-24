@@ -6,6 +6,7 @@ export const Link = styled.a`
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
   cursor: pointer;
+  color: black;
 `;
 
 export const LinkButton = styled(Link)`
