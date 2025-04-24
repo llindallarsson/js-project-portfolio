@@ -6,16 +6,18 @@ import { Sidebar } from "../components/Sidebar";
 const AboutSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 0 0 120px 0;
+  margin-top: 60px;
 
   @media (min-width: 667px) {
     padding: 0 100px 0 100px;
+    margin-top: 180px;
   }
 
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: stretch;
-    padding: 180px 200px 0 120px;
+    padding: 0 100px 0 100px;
+    margin-top: 180px;
   }
 `;
 

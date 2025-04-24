@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import { Sidebar } from "../components/Sidebar";
 
 const ProjectSectionWrapper = styled.section`
-  margin: 120px 0;
+  margin: 0;
 
   @media (min-width: 667px) {
     padding: 0 100px 0 100px;
@@ -14,7 +14,7 @@ const ProjectSectionWrapper = styled.section`
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    padding: 0 120px 0 120px;
+    padding: 0 100px 0 100px;
   }
 `;
 

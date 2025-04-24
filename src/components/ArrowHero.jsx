@@ -26,23 +26,25 @@ const BounceArrow = styled.div`
 const ArrowHero = () => {
   return (
     <CenteredWrapper>
-      <BounceArrow>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="29"
-          height="56"
-          viewBox="0 0 29 56"
-          fill="none"
-        >
-          <path
-            d="M24 9.33333L14.5 22L5 9.33333"
-            stroke="#BC4749"
-            strokeWidth="6"
-            strokeLinecap="square"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </BounceArrow>
+      <a href="#main" aria-label="Scroll to main content">
+        <BounceArrow>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="56"
+            viewBox="0 0 29 56"
+            fill="none"
+          >
+            <path
+              d="M24 9.33333L14.5 22L5 9.33333"
+              stroke="#BC4749"
+              strokeWidth="6"
+              strokeLinecap="square"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </BounceArrow>
+      </a>
     </CenteredWrapper>
   );
 };

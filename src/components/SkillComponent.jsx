@@ -6,7 +6,7 @@ const SkillHeader = styled.h3`
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  margin: 32px 0 16px;
+  margin: 0 0 16px 0;
 
   @media (min-width: 667px) {
     text-align: left;
@@ -35,6 +35,7 @@ const SkillItem = styled.li`
 export const SkillSeparater = styled.hr`
   width: 200px;
   border: 1px solid #bc4749;
+  margin-bottom: 36px;
 
   @media (min-width: 667px) {
     display: none;
