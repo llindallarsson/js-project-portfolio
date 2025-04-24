@@ -5,11 +5,13 @@ import { Sidebar } from "../components/Sidebar";
 
 const SkillWrapper = styled.div`
   margin: 40px 0;
+  width: 100%;
 
-  @media (min-width: 1024px) {
-    display: flex;
-    gap: 60px;
-    padding: 0 12px 0 12px;
+  @media (min-width: 667px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 0 12px;
     margin: 0;
   }
 `;
@@ -19,9 +21,14 @@ const SkillSectionWrapper = styled.section`
   flex-direction: column;
   margin: 0 0 120px 0;
 
+  @media (min-width: 667px) {
+    padding: 0 100px 0 100px;
+  }
+
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: stretch;
+    padding: 0 120px 0 120px;
   }
 `;
 

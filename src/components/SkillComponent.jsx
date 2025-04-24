@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 const SkillHeader = styled.h3`
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   margin: 32px 0 16px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 667px) {
     text-align: left;
     margin: 0 0 16px 0;
   }
@@ -23,7 +23,7 @@ const SkillList = styled.ul`
   align-items: center;
   gap: 8px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 667px) {
     align-items: flex-start;
   }
 `;
@@ -36,7 +36,7 @@ export const SkillSeparater = styled.hr`
   width: 200px;
   border: 1px solid #bc4749;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 667px) {
     display: none;
   }
 `;

@@ -8,9 +8,14 @@ const AboutSectionWrapper = styled.section`
   flex-direction: column;
   margin: 0 0 120px 0;
 
+  @media (min-width: 667px) {
+    padding: 0 100px 0 100px;
+  }
+
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: stretch;
+    padding: 180px 200px 0 120px;
   }
 `;
 

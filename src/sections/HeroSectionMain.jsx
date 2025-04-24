@@ -11,6 +11,14 @@ const HeroWrapper = styled.main`
   flex-direction: column;
   justify-content: center;
   margin: 0;
+
+  @media (min-width: 667px) {
+    padding: 0 80px 0 80px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 100px 0 100px;
+  }
 `;
 
 const HeroSectionMain = () => {

@@ -17,10 +17,6 @@ const CenteredWrapper = styled.div`
   @media (min-width: 667px) {
     margin-top: 120px;
   }
-
-  @media (min-width: 1024px) {
-    margin-top: 180px;
-  }
 `;
 
 const BounceArrow = styled.div`
