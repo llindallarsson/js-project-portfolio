@@ -10,16 +10,16 @@ const ProgressContainer = styled.div`
   right: 0;
   z-index: 1000;
   background-color: #f0c7c8;
-  height: ${(props) => props.barHeight};
+  height: ${(props) => props.$barHeight};
 `;
 
 const ProgressIndicator = styled.div`
   height: 100%;
   background-color: #bc4749;
-  width: ${(props) => props.scrollPercentage}%;
+  width: ${(props) => props.$scrollPercentage}%;
 `;
 
-const ProgressBar = () => {
+export const ProgressBar = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [barHeight, setBarHeight] = useState("4px");
 
@@ -49,10 +49,8 @@ const ProgressBar = () => {
   }, []);
 
   return (
-    <ProgressContainer barHeight={barHeight}>
-      <ProgressIndicator scrollPercentage={scrollPercentage} />
+    <ProgressContainer $barHeight={barHeight}>
+      <ProgressIndicator $scrollPercentage={scrollPercentage} />
     </ProgressContainer>
   );
 };
-
-export default ProgressBar;

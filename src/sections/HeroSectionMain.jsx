@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import ProgressBar from "../components/ProgressBar";
+import { ProgressBar } from "../components/ProgressBar";
 import { Title, TitelStyled, StyledP } from "../components/Typography";
 import { Link } from "../components/Links";
-import ArrowHero from "../components/ArrowHero";
+import { ArrowHero } from "../components/ArrowHero";
 
 const HeroWrapper = styled.main`
   width: 100%;

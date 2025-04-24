@@ -23,7 +23,7 @@ const BounceArrow = styled.div`
   animation: ${bounce} 1.5s ease-in-out infinite;
 `;
 
-const ArrowHero = () => {
+export const ArrowHero = () => {
   return (
     <CenteredWrapper>
       <a href="#main" aria-label="Scroll to main content">
@@ -48,5 +48,3 @@ const ArrowHero = () => {
     </CenteredWrapper>
   );
 };
-
-export default ArrowHero;
