@@ -15,12 +15,17 @@ const ExperienceSectionWrapper = styled.section`
   }
 `;
 
+const ContentContainer = styled.div`
+  flex-grow: 1; // Take remaining space
+  width: 100%;
+`;
+
 export const ExperienceSection = () => {
   return (
     <ExperienceSectionWrapper>
       <SectionHeader>Experience</SectionHeader>
       <Sidebar>Experience</Sidebar>
-      <div>
+      <ContentContainer>
         <ExperienceComponent
           emoji="🎓"
           title="Technigo"
@@ -57,7 +62,7 @@ export const ExperienceSection = () => {
           employment="Information Design"
           date="aug 2019 – okt 2020"
         />
-      </div>
+      </ContentContainer>
     </ExperienceSectionWrapper>
   );
 };

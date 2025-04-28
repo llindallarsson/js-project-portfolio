@@ -19,6 +19,15 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 export const ToHomepageLink = () => {
-  return <StyledLink to="/"> ← Back to Homepage </StyledLink>;
+  return (
+    <StyledLink to="/" onClick={scrollToTop}>
+      {" "}
+      ← Back to Homepage{" "}
+    </StyledLink>
+  );
 };

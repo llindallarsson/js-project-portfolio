@@ -15,6 +15,7 @@ const ExperienceLayout = styled.div`
 `;
 
 const ExperienceComponentWrapper = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 16px;

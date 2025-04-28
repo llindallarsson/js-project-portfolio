@@ -44,8 +44,16 @@ const MediaLinksWrapper = styled.div`
 export const MediaLinks = () => {
   return (
     <MediaLinksWrapper>
-      <a href="https://github.com/llindallarsson">{<IconGitHub />}</a>
-      <a href="https://www.linkedin.com/in/linda-larsson-11a11715b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+      <a
+        href="https://github.com/llindallarsson"
+        aria-label="Go to my GitHub profiile"
+      >
+        {<IconGitHub />}
+      </a>
+      <a
+        href="https://www.linkedin.com/in/linda-larsson-11a11715b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        aria-label="Go to my LinkedIn profiile"
+      >
         {<IconLinkedIn />}
       </a>
     </MediaLinksWrapper>

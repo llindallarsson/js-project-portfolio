@@ -25,6 +25,10 @@ const TextWrapper = styled.div`
   flex: 1;
 `;
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const AboutSection = () => {
   return (
     <AboutSectionWrapper>
@@ -51,7 +55,9 @@ const AboutSection = () => {
           designer, and speak both Figma and JavaScript? Let’s connect!
           <br />
           <br />
-          <Link to="/about">Get to know me more → </Link>
+          <Link to="/about" style={{ color: "black" }} onClick={scrollToTop}>
+            Get to know me more →{" "}
+          </Link>
         </p>
       </TextWrapper>
     </AboutSectionWrapper>
