@@ -4,7 +4,7 @@ import { Title, TitelStyled, StyledP } from "../components/Typography";
 import { Link } from "../components/Links";
 import { ArrowHero } from "../components/ArrowHero";
 
-const HeroWrapper = styled.main`
+const HeroWrapper = styled.header`
   width: 100%;
   height: 100dvh;
   display: flex;

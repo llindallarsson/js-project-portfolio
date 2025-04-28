@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-// Styled components
 const ProgressContainer = styled.div`
   width: 100%;
   position: fixed;
@@ -13,10 +12,14 @@ const ProgressContainer = styled.div`
   height: ${(props) => props.$barHeight};
 `;
 
-const ProgressIndicator = styled.div`
+const ProgressIndicator = styled.div.attrs((props) => ({
+  style: {
+    width: `${props.$scrollPercentage}%`,
+  },
+}))`
   height: 100%;
   background-color: #bc4749;
-  width: ${(props) => props.$scrollPercentage}%;
+  transition: width 0.2s ease;
 `;
 
 export const ProgressBar = () => {
@@ -38,7 +41,7 @@ export const ProgressBar = () => {
       setScrollPercentage(percentage);
     };
 
-    handleResize(); // set initial height
+    handleResize();
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 

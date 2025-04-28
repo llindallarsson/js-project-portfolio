@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { ProgressBar } from "../components/ProgressBar";
 import { StyledP } from "../components/Typography";
 import { ProfilePicture } from "../components/ProfilePicture";
+import { ToHomepageLink } from "../components/ToHomepageLink";
 
-const HeroWrapper = styled.main`
+const HeroWrapper = styled.header`
   width: 100%;
   height: 100dvh;
   display: flex;
@@ -22,18 +22,46 @@ const HeroWrapper = styled.main`
   }
 `;
 
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @media (min-width: 667px) {
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+`;
+
+const StyledPforAbout = styled(StyledP)`
+  font-size: 20px;
+
+  @media (min-width: 370px) {
+    font-size: 32px;
+  }
+  @media (min-width: 667px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 64px;
+  }
+`;
+
 export const HeroSectionAbout = () => {
   return (
-    <>
+    <HeroWrapper>
       <ProgressBar />
-      <Link to="/"> Back to startpage → </Link>
-      <HeroWrapper>
+      <ToHomepageLink />
+      <ContentWrapper>
         <ProfilePicture src="images/profile_picture.jpg" alt="Picture of me" />
-        <StyledP>
-          "Turning pixels into code – with a designer’s eye and a developer’s
+        <StyledPforAbout>
+          Turning pixels into code – with a designer’s eye and a developer’s
           mindset.
-        </StyledP>
-      </HeroWrapper>
-    </>
+        </StyledPforAbout>
+      </ContentWrapper>
+    </HeroWrapper>
   );
 };

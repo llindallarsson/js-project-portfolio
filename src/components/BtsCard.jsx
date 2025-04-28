@@ -1,8 +1,19 @@
+import styled from "styled-components";
+
+const EmojiP = styled.h3`
+  font-size: 64px;
+  margin: 0;
+`;
+
+const BtsCardWrapper = styled.div`
+  margin-bottom: 24px;
+`;
+
 export const BtsCard = ({ emoji, text }) => {
   return (
-    <div>
-      <h3>{emoji}</h3>
+    <BtsCardWrapper>
+      <EmojiP>{emoji}</EmojiP>
       <p>{text}</p>
-    </div>
+    </BtsCardWrapper>
   );
 };

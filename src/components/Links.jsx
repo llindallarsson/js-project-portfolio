@@ -43,3 +43,18 @@ export const LinkButtonWithIcon = ({ href, icon, title }) => {
     </LinkButton>
   );
 };
+
+export const BackToHompage = styled.a`
+  color: #000;
+  font-family: "Courier Prime";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: 25%;
+  text-underline-position: from-font;
+`;
