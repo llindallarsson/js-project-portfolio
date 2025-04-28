@@ -9,7 +9,7 @@ const AccordionContainer = styled.div`
 
 const AccordionItem = styled.div`
   width: 100%;
-  border-bottom: 1px solid #bc4749;
+  border-bottom: 2px solid #bc4749;
   padding: 24px 0;
 `;
 
@@ -52,11 +52,17 @@ const ExpandButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease;
+  transform: ${(props) => (props.isOpen ? "rotate(0deg)" : "rotate(0deg)")};
 `;
 
 const AccordionContent = styled.div`
-  padding: 20px 0;
-  display: ${(props) => (props.isOpen ? "block" : "none")};
+  max-height: ${(props) => (props.isOpen ? "1000px" : "0")};
+  opacity: ${(props) => (props.isOpen ? "1" : "0")};
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.2s ease;
+  padding: ${(props) => (props.isOpen ? "20px 0" : "0")};
 `;
 
 export const Accordion = ({ title, children }) => {
@@ -72,7 +78,7 @@ export const Accordion = ({ title, children }) => {
         <Title>{title}</Title>
         <Controls>
           <ReadLink>{isOpen ? "close article" : "read article"}</ReadLink>
-          <ExpandButton>{isOpen ? "-" : "+"}</ExpandButton>
+          <ExpandButton isOpen={isOpen}>{isOpen ? "-" : "+"}</ExpandButton>
         </Controls>
       </AccordionHeader>
       <AccordionContent isOpen={isOpen}>{children}</AccordionContent>
