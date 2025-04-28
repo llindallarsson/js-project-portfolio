@@ -5,7 +5,6 @@ import { HeroSectionAbout } from "../sections/HeroSectionAbout";
 import { BeyondScreenSection } from "../sections/BeyondScreenSection";
 import { ExperienceSection } from "../sections/ExperienceSection";
 import { ArticleSection } from "../sections/ArticleSection";
-import { ToHomepageLink } from "../components/ToHomepageLink";
 
 const PageWrapper = styled.main`
   display: flex;
