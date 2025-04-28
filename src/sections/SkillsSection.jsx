@@ -98,7 +98,7 @@ const SkillsSection = () => {
             "A/B Testing",
             "Par-programming",
             "Mob-programming",
-            "Google Accessibility Testing",
+            "Accessibility Testing",
           ]}
         ></SkillComponent>
       </SkillWrapper>

@@ -1,30 +1,18 @@
-import styled from "styled-components";
-import HeroSectionMain from "./sections/HeroSectionMain";
-import AboutSection from "./sections/AboutSection";
-import SkillsSection from "./sections/SkillsSection";
-import ProjectsSection from "./sections/ProjectsSection";
-import FooterSection from "./sections/FooterSection";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export const MainWrapper = styled.main`
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-
-  @media (min-width: 667px) {
-    gap: 180px;
-  }
-`;
+import { StartPage } from "./pages/StartPage";
+import { AboutPage } from "./pages/AboutPage";
 
 export const App = () => {
   return (
-    <>
-      <HeroSectionMain></HeroSectionMain>
-      <MainWrapper id="main">
-        <AboutSection></AboutSection>
-        <SkillsSection></SkillsSection>
-        <ProjectsSection></ProjectsSection>
-        <FooterSection></FooterSection>
-      </MainWrapper>
-    </>
+    <BrowserRouter>
+      <main>
+        <Routes>
+          <Route path="/" element={<StartPage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 };

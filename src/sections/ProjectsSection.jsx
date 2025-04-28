@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { SectionHeader } from "../components/Typography";
-import { ProjectCard } from "../components/ProjectCard";
 import { Sidebar } from "../components/Sidebar";
+import { ProjectCard } from "../components/ProjectCard";
 
 const ProjectSectionWrapper = styled.section`
   margin: 0;
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       <div>
         <ProjectCard
           title="Business project"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+          description="This was the very first project I worked on during my studies. I designed a fictional website for a museum and art exhibition, which gave me a chance to really explore CSS Flexbox and Grid for building responsive layouts."
           imageSrc="/images/business_project.png"
           imageAlt="Business project"
           tech={["HTML", "CSS"]}
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
         ></ProjectCard>
         <ProjectCard
           title="Recipe project"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+          description="This was my first time working with APIs and JavaScript. I built a recipe app that fetches data dynamically, which really helped me understand how to connect the front end with external data sources."
           imageSrc="/images/recipe_project.png"
           imageAlt="Recipe project"
           tech={["JavaScript", "HTML", "CSS"]}
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
         ></ProjectCard>
         <ProjectCard
           title="Accessibility project"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+          description="In this project, I created a quiz application with a strong focus on accessibility. It was all about writing inclusive code and following WCAG guidelines to make sure the experience worked for everyone."
           imageSrc="/images/accessibility_project.png"
           imageAlt="Accessibility project"
           tech={["JavaScript", "HTML", "CSS"]}
