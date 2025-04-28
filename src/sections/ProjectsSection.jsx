@@ -3,7 +3,7 @@ import { SectionHeader } from "../components/Typography";
 import { Sidebar } from "../components/Sidebar";
 import { ProjectCard } from "../components/ProjectCard";
 
-const ProjectSectionWrapper = styled.section`
+const SectionWrapper = styled.section`
   margin: 0;
 
   @media (min-width: 667px) {
@@ -20,7 +20,7 @@ const ProjectSectionWrapper = styled.section`
 
 const ProjectsSection = () => {
   return (
-    <ProjectSectionWrapper>
+    <SectionWrapper>
       <SectionHeader>Featured projects</SectionHeader>
       <Sidebar>
         Featured <br /> projects
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
           description="This was my first time working with APIs and JavaScript. I built a recipe app that fetches data dynamically, which really helped me understand how to connect the front end with external data sources."
           imageSrc="/images/recipe_project.png"
           imageAlt="Recipe project"
-          tech={["JavaScript", "HTML", "CSS"]}
+          tech={["JavaScript", "HTML", "CSS", "APIs"]}
           liveLink="https://recipelibrary-lindal.netlify.app/"
           codeLink="https://github.com/llindallarsson/js-project-recipe-library"
         ></ProjectCard>
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
           codeLink="https://github.com/llindallarsson/js-project-accessibility"
         ></ProjectCard>
       </div>
-    </ProjectSectionWrapper>
+    </SectionWrapper>
   );
 };
 

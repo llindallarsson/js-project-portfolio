@@ -3,7 +3,7 @@ import { SectionHeader } from "../components/Typography";
 import { Sidebar } from "../components/Sidebar";
 import { ExperienceComponent } from "../components/ExperienceComponent";
 
-const ExperienceSectionWrapper = styled.section`
+const SectionWrapper = styled.section`
   @media (min-width: 667px) {
     padding: 0 100px 0 100px;
   }
@@ -16,13 +16,13 @@ const ExperienceSectionWrapper = styled.section`
 `;
 
 const ContentContainer = styled.div`
-  flex-grow: 1; // Take remaining space
+  flex-grow: 1;
   width: 100%;
 `;
 
 export const ExperienceSection = () => {
   return (
-    <ExperienceSectionWrapper>
+    <SectionWrapper>
       <SectionHeader>Experience</SectionHeader>
       <Sidebar>Experience</Sidebar>
       <ContentContainer>
@@ -63,6 +63,6 @@ export const ExperienceSection = () => {
           date="aug 2019 – okt 2020"
         />
       </ContentContainer>
-    </ExperienceSectionWrapper>
+    </SectionWrapper>
   );
 };

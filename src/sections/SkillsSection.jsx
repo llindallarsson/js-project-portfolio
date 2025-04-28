@@ -16,7 +16,7 @@ const SkillWrapper = styled.div`
   }
 `;
 
-const SkillSectionWrapper = styled.section`
+const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -34,7 +34,7 @@ const SkillSectionWrapper = styled.section`
 
 const SkillsSection = () => {
   return (
-    <SkillSectionWrapper>
+    <SectionWrapper>
       <SectionHeader>Skills</SectionHeader>
       <Sidebar>Skills</Sidebar>
       <SkillWrapper>
@@ -102,7 +102,7 @@ const SkillsSection = () => {
           ]}
         ></SkillComponent>
       </SkillWrapper>
-    </SkillSectionWrapper>
+    </SectionWrapper>
   );
 };
 

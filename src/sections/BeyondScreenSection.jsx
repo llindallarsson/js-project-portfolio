@@ -3,7 +3,7 @@ import { SectionHeader } from "../components/Typography";
 import { Sidebar } from "../components/Sidebar";
 import { BtsCard } from "../components/BtsCard";
 
-const BeyondScreenSectionWrapper = styled.section`
+const SectionWrapper = styled.section`
   @media (min-width: 667px) {
     padding: 0 100px 0 100px;
   }
@@ -17,23 +17,23 @@ const BeyondScreenSectionWrapper = styled.section`
 
 export const BeyondScreenSection = () => {
   return (
-    <BeyondScreenSectionWrapper>
+    <SectionWrapper>
       <SectionHeader>Beyond the screen</SectionHeader>
       <Sidebar>Beyond the screen</Sidebar>
       <div>
         <BtsCard
           emoji="🖼️"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          text="I’m a passionate treasure hunter — at least when it comes to interior design and sustainable living. Few things make me happier than finding a hidden gem at a flea market and giving it a new story. Circular shopping lets me combine creativity with conscious choices — and fill my home with pieces that truly have character."
         ></BtsCard>
         <BtsCard
           emoji="🐶"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          text="I spend a lot of time with my dog — my favorite coworker and constant sidekick. Whether we’re exploring nature or just chilling on the couch, he’s always there to keep things fun, energetic, and (mostly) balanced. He’s the best kind of distraction during my work-from-home days!"
         ></BtsCard>
         <BtsCard
           emoji="🍣"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          text="I love to cook, eat, and dream about food — especially Asian cuisine. Sushi holds a special place in my heart (and kitchen), and I’m constantly trying out new recipes. One of my biggest dreams? Traveling to Japan to eat my way through the country, one sushi bar at a time."
         ></BtsCard>
       </div>
-    </BeyondScreenSectionWrapper>
+    </SectionWrapper>
   );
 };
