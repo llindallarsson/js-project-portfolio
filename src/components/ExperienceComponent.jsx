@@ -19,7 +19,7 @@ const ExperienceComponentWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 `;
 
 export const ExperienceComponent = ({ emoji, title, employment, date }) => {

@@ -17,7 +17,7 @@ const SkillHeader = styled.h3`
 const SkillList = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 0 0 32px 0;
+  margin-bottom: 24px
   display: flex;
   flex-direction: column;
   align-items: center;

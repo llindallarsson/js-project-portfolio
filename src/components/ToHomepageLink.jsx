@@ -10,6 +10,7 @@ const StyledLink = styled(Link)`
   line-height: normal;
   text-decoration-line: underline;
   text-decoration-style: solid;
+  text-decoration-color: #bc4749;
   text-underline-offset: 40%;
   margin-bottom: 60px;
   width: 100%;

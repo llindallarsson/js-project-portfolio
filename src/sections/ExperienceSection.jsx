@@ -23,8 +23,8 @@ const ContentContainer = styled.div`
 export const ExperienceSection = () => {
   return (
     <SectionWrapper>
-      <SectionHeader>Experience</SectionHeader>
-      <Sidebar>Experience</Sidebar>
+      <SectionHeader>My Journey</SectionHeader>
+      <Sidebar>My Journey</Sidebar>
       <ContentContainer>
         <ExperienceComponent
           emoji="🎓"

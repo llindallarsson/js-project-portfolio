@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const AccordionContainer = styled.div`
-  flex-grow: 1;
-  width: 100%;
-  margin: 0 auto;
-`;
-
 const AccordionItem = styled.div`
   width: 100%;
   border-bottom: 2px solid #bc4749;
   padding: 24px 0;
+  margin-bottom: 24px;
 `;
 
 const AccordionHeader = styled.div`
